@@ -1,4 +1,4 @@
-# SWE-Project1
+# NickReichlin_Portfolio
 
 Hello! My name is Nick Reichlin and I am a computer science student at the University of Akron with a minor in business administration. I am studying for my Bachelor's degree and plan to graduate in May of 2024.
 
