@@ -1,0 +1,45 @@
+class Solution {
+public:
+    bool isValid(string s) {
+        if(s.empty() || s.length()%2 != 0)
+        {
+            return false;
+        }
+        stack<char> input;
+        int length = s.length();
+        char top;
+        for(int i = 0; i < length; ++i)
+        {
+            if(s[i] == '(' || s[i] == '[' || s[i] == '{')
+            {
+                input.push(s[i]);
+            }
+            else
+            {
+                if(!input.empty())
+                {
+                    top = input.top();
+                    if(((s[i] == ')') && (top == '('))|| ((s[i] == ']') && (top == '[')) 
+                       || ((s[i] == '}') && (top == '{')))
+                    {
+                        input.pop();
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else
+                    return false;
+            }
+        }
+        if(input.empty())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+};
