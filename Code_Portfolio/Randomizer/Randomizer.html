@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<script src="RandomizeFunctions.js"></script>
+<h1>Randomizer</h1>
+<section>
+<h2>Dice Roller</h2> 
+<div>
+    <p id ="DieResult"></p>
+</div>
+<form name="RollAction" action="" method="Get">
+    <input type="button" name="RollButton" Value="Roll" onClick="RollDie()">
+</form>
+<h2>Coin Flipper</h2> 
+<div>
+    <p id ="FlipResult"></p>
+</div>
+<form name="FlipAction" action="" method="Get">
+    <input type="button" name="FlipButton" Value="Flip" onClick="FlipCoin()">
+</form>
+</section>
+<section>
+    <h2 style="margin-bottom: 5px">Card Picker</h2>
+    <h5>Out of standard 52 card deck</h5> 
+    <div style="width:500px;">
+        <div id ="CardPick" style="border: 0px; height: auto; width: 40%; float:left; margin: 10px; margin-top: 60px; font-size: 40px; text-align: right;"> </div>
+        <div style="border: 0px; height: auto; width: auto; float:left; margin: 10px; margin-top: 60px; font-size: 40px; text-align: center;">of</div>
+        <div id ="SuitPick" style="border: 0px; height: auto; width: 40%; float:left; margin: 10px; margin-top: 60px; font-size: 40px; text-align: left;"> </div>
+    </div>
+    <form name="ChooseCard" action="" method="Get">
+        <input type="button" name="ChooseButton" Value="Pick A Card" onClick="RandomCard()">
+    </form>
+</section>
+</html>
